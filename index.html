@@ -20,7 +20,11 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
-
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
 
 <body>
     <header class="site-header">
@@ -29,7 +33,12 @@
                 <div class="row align-items-center">
                     <div class="col-10 col-lg-4">
                         <h1 class="site-branding flex">
-                            <a href="#">ENGINEER</a>
+                            <div>
+                                <a href="http://www.engineernitk.org/">
+                                    <img src="img/Engineer_Logo.png" height="50px" style="vertical-align:middle">
+                                    <span>ENGINEER</span>
+                                </a>
+                            </div>
                         </h1>
                     </div>
 
@@ -43,11 +52,18 @@
                             </div><!-- .hamburger-menu -->
 
                             <ul>
-                                <li><a href="">HOME</a></li>
-                                <li><a href="#">TECHNITES 2018</a></li>
-                                <li><a href="#s1">SIG</a></li>
-                                <li><a href="#s2">PROJECTS</a></li>
-                                <li><a href="#s3">EVENTS</a></li>
+                                <li><a href="">TECHNITES 2018</a></li>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#s1">SIGS</a></li>
+                                <li><a href="#s2">SOCIAL MEDIA</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DropDown
+                                    <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Link 2</a></li>
+                                    </ul>
+                                 </li> 
                                 <li></li>
                             </ul><!-- flex -->
                         </nav><!-- .site-navigation -->
@@ -181,275 +197,7 @@
                     </div><!-- lineup-artists-headline -->
                 </div><!-- col-12 -->
             </div><!-- row -->
-
-            <div class="row" id = "s2">
-                <div class="col-12">
-                    <div class="the-complete-lineup">
-                        <div class="entry-title">
-                            <p>TECHNITES 2018</p>
-                            <h2>The Complete Lineup</h2>
-                        </div><!-- entry-title -->
-
-                        <div class="row the-complete-lineup-artists">
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/01.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>Constellation</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/02.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>Bat Race</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/03.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>LED Globe</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/04.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>Infinity Mirror</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/05.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>Laser Limbo</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/06.png" alt="" style="border: 1px solid black"> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>Prisma</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/07.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>Ruben's Tube</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/08.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>MIDI Band</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/09.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>Contraption</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/10.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>DDR</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/11.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>Blitzkrieg</h2>
-                            </div><!-- artist-single -->
-
-                            <div class="col-6 col-md-4 col-lg-3 artist-single">
-                                <figure class="featured-image">
-                                    <a href="#"> <img src="img/12.jpg" alt=""> </a>
-                                    <a href="#" class="box-link"> <img src="images/box.jpg" alt=""> </a>
-                                </figure><!-- featured-image -->
-
-                                <h2>LED Wall</h2>
-                            </div><!-- artist-single -->
-                        </div><!-- the-complete-lineup-artists -->
-                    </div><!-- the-complete-lineup -->
-                </div><!-- col-12 -->
-            </div><!-- row -->
         </div><!-- container -->
-
-        <div class="homepage-next-events" id = "s3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="entry-title">
-                            <p>TECHNITES 2018</p>
-                            <h2>Our Events</h2>
-                        </div><!-- entry-title -->
-                    </div><!-- col-12 -->
-                </div><!-- row -->
-            </div><!-- container -->
-
-            <div class="next-event-slider-wrap">
-                <div class="swiper-container next-event-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="img/H01.jpg" alt="">
-
-                                    <a href="#" class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Constellation</h3>
-                                        <p>Haven't been lucky enough to have seen all the constellations in the night sky? No problemo! Technites brings to you #Constellations! A virtual sky of 18 beauty-to-the-eye constellations, seen one by one, as shiny as the real stars and a chance to get to know all the major constellations out there and realize how beautiful our world really is.</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="img/H02.jpg" alt="">
-
-                                    <a href="#" class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Bat Race</h3>
-                                        <p>One, Two, Three and GO! Gear yourselves and your cycles up, quite figuratively and literally for the craziest _stationary cycle race_ ever! Paddle away to light up an LED each in series and complete the Bat shape to win the race ! So, who's going to signal the Batman first this year? Will it be James Gordan, your friend or you?</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="img/H03.jpg" alt="">
-
-                                    <a href="#" class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>LED Globe</h3>
-                                        <p>Remember the old school globe from the geography class? Well you may not be able to locate places on this #Led_globe but you will surely wonder how your persistence of vision can create illusion and make you spellbound. Not only that, we present #Propeller_message_displayer, which displays the user defined message using the same principle with a propeller and an array of LEDs</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="img/H04.jpg" alt="">
-
-                                    <a href="#" class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Infinity Mirror</h3>
-                                        <p>Inception was still just 3 levels of dreams. We bring to you something even more mind-boggling.. " #The_Infinity_Mirror " ! A _single mirror_ which mirrors itself repeatedly that it ends up being the most simplest yet most eye-catching illusion ever, Beautifying itself with _colourful LEDs_ to project the magnificent ENGI logo!</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-
-                        <div class="swiper-slide">
-                            <div class="next-event-content">
-                                <figure class="featured-image">
-                                    <img src="img/H07.jpg" alt="">
-
-                                    <a href="#" class="entry-content flex flex-column justify-content-center align-items-center">
-                                        <h3>Ruben's Tube</h3>
-                                        <p>What could be more entertaining than fire and good music? How about fire that will dance to that music? We at Technites bring you #RUBENS_TUBEthat literally breathes the fire of life into us. We all know that sound waves exist around us constantly, but we never get a chance to actually see them. Unless, that is, you happen to have a Ruben�s Tube - a hole-ridden pipe filled with flammable gas which when lit becomes a row of burners! Watch what causes flames to pulse to a beat</p>
-                                    </a>
-                                </figure><!-- featured-image -->
-                            </div><!-- next-event-content -->
-                        </div><!-- swiper-slide" -->
-                    </div><!-- .swiper-wrapper -->
-                </div><!-- .swiper-container -->
-
-                <div class="swiper-button-next">
-                    <img src="images/button.png" alt="">
-                </div><!-- .slider-button -->
-            </div><!-- .next-event-slider-wrap -->
-        </div><!-- homepage-next-events -->
-
-        <div class="home-page-last-news">
-            <div class="container">
-                <div class="header">
-                    <div class="entry-title">
-                        <p>Technites 2018</p>
-                        <h2>Project Insights</h2>
-                    </div><!-- entry-title -->
-                </div><!-- header -->
-
-                <div class="home-page-last-news-wrap">
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <figure class="featured-image">
-                                <a href="#"> <img src="img/H05.jpg" alt="fesival+celebration"> </a>
-                            </figure><!-- featured-image -->
-
-                            <div class="box-link-date">
-                                <a href="#">15 Oct Onwards</a>
-                            </div>
-
-                            <div class="content-wrapper">
-                                <div class="entry-content">
-                                    <div class="entry-header">
-                                        <h2><a href="#">Laser Limbo</a></h2>
-                                    </div><!-- entry-header -->
-
-                                    <div class="entry-description">
-                                        <p>How flexible is your body ?? Ever tried bending yourself through laser beams without triggering them ?? We at Technites bring you #LASER_LIMBO an exhilarating game with lasers where you can have immense fun. Be ready with your suits.</p>
-                                    </div><!-- entry-description -->
-                                </div><!-- entry-content -->
-                            </div><!-- content-wrapper -->
-                        </div><!-- .col-6 -->
-
-                        <div class="col-12 col-md-6">
-                            <figure class="featured-image">
-                                <a href="#"> <img src="img/H09.jpg" alt="fesival+celebration"> </a>
-                            </figure><!-- featured-image -->
-
-                            <div class="box-link-date">
-                                <a href="">15 Oct Onwards</a>
-                            </div>
-
-                            <div class="content-wrapper">
-                                <div class="entry-content">
-                                    <div class="entry-header">
-                                        <h2><a href="#">Contraption</a></h2>
-                                    </div><!-- entry-header -->
-
-                                    <div class="entry-description">
-                                        <p>Inspired from the basic principle of conservation of energy, we at TECHNITES bring to you this ENGI one of the most exhilarating spectacle ever. Get ready to be awed by a ball which goes up and down the tracks forever and ever, by a chain of different energy conversion steps.</p>
-                                    </div><!-- entry-description -->
-                                </div><!-- entry-content -->
-                            </div><!-- .content-wrapper -->
-                        </div><!-- col-6 -->
-                    </div><!-- row -->
-                </div><!-- home-page-last-news-wrap -->
-            </div><!-- container -->
-        </div><!-- home-page-last-news -->
     </div>
 
     <footer class="site-footer">
@@ -475,12 +223,8 @@ Module designed by Priyam & Shushant <br> Contributors: Rakshita, Sankalp, Shwet
 
                         <div class="footer-social">
                             <ul class="flex justify-content-center align-items-center">
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                             </ul>
                         </div><!-- footer-social -->
                     </div><!-- col -->
@@ -488,7 +232,7 @@ Module designed by Priyam & Shushant <br> Contributors: Rakshita, Sankalp, Shwet
             </div><!-- container -->
         </div><!-- footer-content-wrapper -->
     </footer><!-- site-footer -->
-
+    
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
     <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>

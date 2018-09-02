@@ -10,7 +10,7 @@
 
     var countdown_date = $('.countdown').data("date");
 
-    $('.countdown').countdown('2018/10/14', function(event) {
+    $('.countdown').countdown('2018/10/11', function(event) {
         $('.dday').html(event.strftime('%-D'));
         $('.dhour').html(event.strftime('%-H'));
         $('.dmin').html(event.strftime('%-M'));
