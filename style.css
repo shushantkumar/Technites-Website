@@ -230,12 +230,12 @@ body {
 /*------------------------------------------------------------
 # hero
 -----------------------------------------------------------*/
-.hero-content {
+/*.hero-content {
     padding: 220px 0;
     background: url("img/cover4.gif") no-repeat;
     background-size: cover;
-}
-
+}*/
+/*
 .hero-content .entry-header {
     position: relative;
     text-align: center;
@@ -270,13 +270,49 @@ body {
     .hero-content .entry-header .entry-meta-date {
         top: 60px;
     }
+}*/
+
+.techie {
+    padding: 50px;
+    margin: 0;
+    font-family: mountains;
+    font-size:120px!important;
+    background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.magic {
+    position: relative;
+    /*width: 100%;*/
+    top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: hsl(0, 0%, 90%);
+    text-align: center; 
+}
+
+@media screen and (min-width: 992px) {
+    .techie {
+        font-size: 172px;
+    }
+
+    .countdown {
+        top: 60px;
+    }
+}
+
 
 /*------------------------------------------------------------
 ## countdown
 ------------------------------------------------------------*/
 .countdown {
-    margin-top: 40px;
+    margin-top: 20px;
+    /*padding: 20px 0;*/
+    position: relative;
+    text-align: center;
+
 }
 
 .countdown-holder {
@@ -331,8 +367,8 @@ body {
     /*min-height: 4640px;*/
     width: 100%;
     padding-bottom: 120px;
-    background: url("images/middle-cover.jpg") no-repeat;
-    background-size: 100% auto;
+    /*background: url("images/middle-cover.jpg") no-repeat;
+    background-size: 100% auto;*/
 }
 
 .content-section .middle-cover {
@@ -1963,6 +1999,56 @@ body {
 
 
 
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #010511;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #010511;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 
 
 
